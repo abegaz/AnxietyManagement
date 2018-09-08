@@ -1,0 +1,7 @@
+All of you functional requirements (FRs) are described very well. 
+However, your NFRs (non- functional requirements) are vague. 
+The non-functional requirements describe how the system must 
+or must not work to satisfy some quality requirements or constraints. 
+It should be measureable. For instance, reliability could be represented with response time. 
+You could say the response time for a certain process should not exceed 5 seconds.
+Please rework on your NFRs before you start working on user stories. 
