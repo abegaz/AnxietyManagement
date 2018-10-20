@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:minHeight="300dp" android:minWidth="400dp"
+>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="Welcome to Anxiety Assistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/textView" android:clickable="false"
+                    android:typeface="normal"
+                    android:fontFamily="sans-serif-medium"
+
+
+                    android:textSize="42sp"
+                    app:fontFamily="sans-serif"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp">
+
+            <TextView
+                    android:text="Please register your account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/textView2" android:clickable="false"
+                    android:typeface="normal"
+                    android:fontFamily="sans-serif-medium"
+
+                    android:textSize="20sp"
+                    app:fontFamily="sans-serif"
+            />
+        </LinearLayout>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:text="Enter Email"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:text="Enter Username"
+        />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="284dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:text="Enter Password"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="284dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText7"
+                    android:text="Confirm Password"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="427dp"
+            tools:layout_editor_absoluteX="148dp" android:id="@+id/submitAccount_button"/>
+</android.support.constraint.ConstraintLayout>
