@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="300dp" android:minWidth="400dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,27 +78,26 @@
             android:padding="10dp">
 
             <ImageButton
-                android:id="@+id/user_backButton"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_margin="0dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="0"
-                android:background="@null"
-                android:onClick="changeView_home"
-                android:padding="15dp"
-                android:paddingBottom="0dp"
-                android:paddingLeft="0dp"
-                android:paddingRight="0dp"
-                android:paddingTop="0dp"
-                android:scaleType="fitCenter"
-                android:visibility="visible"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="194dp"
-                tools:srcCompat="@drawable/left_arrow" />
+                    android:id="@+id/user_backButton"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:padding="15dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="0dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="194dp"
+                    android:src="@drawable/left_arrow"/>
 
         </LinearLayout>
     </LinearLayout>
