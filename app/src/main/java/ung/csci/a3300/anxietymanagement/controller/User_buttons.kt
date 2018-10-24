@@ -46,6 +46,10 @@ class User_buttons : AppCompatActivity() {
 //            // Do something in response to button
 //            setContentView(R.layout.register)
 //        }
+//        fun changeView_location(view: View) {
+//            //  Do something in response to button
+//            setContentView(R.layout.location)
+//        }
     }
 
 /*
@@ -55,6 +59,8 @@ class User_buttons : AppCompatActivity() {
     chat_button.setOnClickListener(View.OnClickListener { btnListener })
     val games_button = findViewById(R.id.user_games) as ImageButton
     games_button.setOnClickListener(btnListener)
+    val location_button = findViewById(R.id.user_location) as ImageButton
+    location_button.setOnClickListener(btnListener)
 
     private val btnListener = object : View.OnClickListener {
 
