@@ -5,6 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#999999"
         android:minHeight="300dp" android:minWidth="400dp">
 
     <LinearLayout
@@ -51,7 +52,7 @@
                 android:clickable="false"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:text="Meetup"
+                android:text="Food"
                 android:textSize="42sp"
 
 
@@ -78,7 +79,7 @@
             android:padding="10dp">
 
             <ImageButton
-                    android:id="@+id/user_backButton"
+                    android:id="@+id/user_food_backButton"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_margin="0dp"

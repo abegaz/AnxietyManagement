@@ -5,6 +5,7 @@
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              android:minHeight="300dp" android:minWidth="400dp"
+                                             android:background="#999999"
 >
 
     <LinearLayout

@@ -5,7 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:minHeight="300dp" android:minWidth="400dp">
+        android:minHeight="300dp" android:minWidth="400dp"
+        android:background="#999999">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,20 +44,20 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_weight="1"
-                android:clickable="false"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Meetup"
-                android:textSize="42sp"
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Help"
+                    android:textSize="42sp"
 
 
-                android:typeface="normal"
-                app:fontFamily="sans-serif" />
+                    android:typeface="normal"
+                    app:fontFamily="sans-serif"/>
 
         </LinearLayout>
 
@@ -78,7 +79,7 @@
             android:padding="10dp">
 
             <ImageButton
-                    android:id="@+id/user_backButton"
+                    android:id="@+id/user_anxietyMain_backButton"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_margin="0dp"
