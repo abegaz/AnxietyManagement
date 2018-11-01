@@ -13,6 +13,7 @@ import ung.csci.a3300.anxietymanagement.view.MainActivity;
 
 public class gamesPage extends AppCompatActivity {
 
+
 //        String[] Games = {"Proteus","Abzu","Journey","Farming Simulator", "Meadow"};
 //        // "Proteus","Abzu","Journey","Farming Simulator", "Meadow" wtf are these? its about loneliness not walking through a park
 //        TextView text = (TextView) findViewById(R.id.text_display);

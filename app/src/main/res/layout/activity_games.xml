@@ -88,14 +88,14 @@
                         android:layout_width="223dp"
                         android:layout_height="48dp"
                         android:layout_weight="1"
-                        android:text="`Game`"
-                        tools:textSize="30sp"/>
+                        android:text="Click Next Game"
+                        tools:textSize="30sp" android:gravity="center_horizontal"/>
             </LinearLayout>
 
             <Button
                     android:id="@+id/nextGame_button"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="82dp"
                     android:text="Next Game"/>
 
             <LinearLayout

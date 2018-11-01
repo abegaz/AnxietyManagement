@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import android.content.Intent
+import android.widget.Button
 import ung.csci.a3300.anxietymanagement.R
 
 class MainActivity() : AppCompatActivity() {
