@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="#999999"
+    tools:context=".view.symptoms">
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radio_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nervousness" />
+
+        <RadioButton
+            android:id="@+id/radio_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increased Heart Rate" />
+
+        <RadioButton
+            android:id="@+id/radio_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rapid Breathing" />
+
+        <RadioButton
+            android:id="@+id/radio_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trembling" />
+
+        <RadioButton
+            android:id="@+id/radio_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trouble Sleeping" />
+
+        <RadioButton
+            android:id="@+id/radio_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gastrointestinal Issues" />
+
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Worry" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panic Feeling" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Which best describes your current anxiety symptoms?"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:text="Select" />
+</RelativeLayout>

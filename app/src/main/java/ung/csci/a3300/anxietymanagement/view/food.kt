@@ -20,17 +20,19 @@ class food : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_food)
-        val back_button = findViewById<ImageButton>(R.id.user_food_backButton)
         var clickListener = View.OnClickListener {view ->
             when (view.getId()) {
-                R.id.user_food_backButton -> openMainActivity()
             }
         }
-        back_button.setOnClickListener(clickListener)
     }
     fun openMainActivity(){
         val intent = Intent(this@food,MainActivity::class.java)
         finish()
+        startActivity(intent)
+    }
+    override fun onBackPressed() {
+        finish()
+        val intent = Intent(this@food, anxiety::class.java)
         startActivity(intent)
     }
 }

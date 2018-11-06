@@ -20,17 +20,15 @@ class chat : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_chat)
-        val back_button = findViewById<ImageButton>(R.id.user_chat_backButton)
         var clickListener = View.OnClickListener {view ->
             when (view.getId()) {
-                R.id.user_chat_backButton -> openMainActivity()
             }
         }
-        back_button.setOnClickListener(clickListener)
+
     }
-    fun openMainActivity(){
-        val intent = Intent(this@chat,MainActivity::class.java)
+    override fun onBackPressed() {
         finish()
+        val intent = Intent(this@chat, MainActivity::class.java)
         startActivity(intent)
     }
 }

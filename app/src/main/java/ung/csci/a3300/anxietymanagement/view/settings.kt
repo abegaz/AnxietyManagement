@@ -20,17 +20,19 @@ class settings : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_settings)
-        val back_button = findViewById<ImageButton>(R.id.user_setting_backButton)
         var clickListener = View.OnClickListener {view ->
             when (view.getId()) {
-                R.id.user_setting_backButton -> openMainActivity()
             }
         }
-        back_button.setOnClickListener(clickListener)
     }
     fun openMainActivity(){
         val intent = Intent(this@settings,MainActivity::class.java)
         finish()
+        startActivity(intent)
+    }
+    override fun onBackPressed() {
+        finish()
+        val intent = Intent(this@settings, MainActivity::class.java)
         startActivity(intent)
     }
 }

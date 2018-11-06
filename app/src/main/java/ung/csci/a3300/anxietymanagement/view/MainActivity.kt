@@ -9,7 +9,6 @@ import android.content.Intent
 import ung.csci.a3300.anxietymanagement.R
 
 class MainActivity() : AppCompatActivity() {
-    public var mainSceneReady = false
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -20,8 +19,7 @@ class MainActivity() : AppCompatActivity() {
         val meetup_button = findViewById<ImageButton>(R.id.user_meetup)
         val chat_button = findViewById<ImageButton>(R.id.user_chat)
         val anxiety_button = findViewById<ImageButton>(R.id.user_anxiety)
-        val food_button = findViewById<ImageButton>(R.id.user_food)
-        val games_button = findViewById<ImageButton>(R.id.user_games)
+        val help_button = findViewById<ImageButton>(R.id.user_help)
         val settings_button = findViewById<ImageButton>(R.id.user_setting)
 
 //        val login_button = findViewById<ImageButton>(R.id.login_button)
@@ -31,9 +29,8 @@ class MainActivity() : AppCompatActivity() {
                 R.id.user_anxiety -> openAnxietyActivity()
                 R.id.user_setting -> openSettingsActivity()
                 R.id.user_meetup -> openMeetupActivity()
-                R.id.user_games -> openGamesActivity()
+                R.id.user_help -> openHelpActivity()
                 R.id.user_chat -> openChatActivity()
-                R.id.user_food -> openFoodActivity()
 //              R.id.user_games_backButton -> setContentView(R.layout.activity_main)
             }
         }
@@ -41,20 +38,14 @@ class MainActivity() : AppCompatActivity() {
         meetup_button.setOnClickListener(clickListener)
         chat_button.setOnClickListener(clickListener)
         anxiety_button.setOnClickListener(clickListener)
-        food_button.setOnClickListener(clickListener)
-        games_button.setOnClickListener(clickListener)
+        help_button.setOnClickListener(clickListener)
         settings_button.setOnClickListener(clickListener)
 
 //        login_button.setOnClickListener(clickListener)
 //        register_button.setOnClickListener(clickListener)
     }
-    fun openGamesActivity(){
-        val intent = Intent(this@MainActivity,games::class.java)
-        finish()
-        startActivity(intent)
-    }
-    fun openFoodActivity(){
-        val intent = Intent(this@MainActivity,food::class.java)
+    fun openHelpActivity(){
+        val intent = Intent(this@MainActivity,symptoms::class.java)
         finish()
         startActivity(intent)
     }

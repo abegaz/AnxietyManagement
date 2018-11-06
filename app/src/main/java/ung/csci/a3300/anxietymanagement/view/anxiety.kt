@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.widget.ImageButton
+import kotlinx.android.synthetic.main.activity_anxiety_main.*
 import ung.csci.a3300.anxietymanagement.R
 import kotlinx.android.synthetic.main.activity_games.*
 
@@ -20,17 +21,49 @@ class anxiety : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_anxiety_main)
-        val back_button = findViewById<ImageButton>(R.id.user_anxietyMain_backButton)
+        val games_button = findViewById<ImageButton>(R.id.user_games)
+        val food_button = findViewById<ImageButton>(R.id.user_food)
+        val breathing_button = findViewById<ImageButton>(R.id.user_breathing)
+        val music_button = findViewById<ImageButton>(R.id.user_music)
         var clickListener = View.OnClickListener {view ->
             when (view.getId()) {
-                R.id.user_anxietyMain_backButton -> openMainActivity()
+                R.id.user_games -> openGamesActivity()
+                R.id.user_food -> openFoodActivity()
+                R.id.user_breathing -> openBreathingActivity()
+                R.id.user_music -> openMusicActivity()
+
+
             }
         }
-        back_button.setOnClickListener(clickListener)
+        games_button.setOnClickListener(clickListener)
+        food_button.setOnClickListener(clickListener)
+        breathing_button.setOnClickListener(clickListener)
+        music_button.setOnClickListener(clickListener)
     }
-    fun openMainActivity(){
-        val intent = Intent(this@anxiety,MainActivity::class.java)
+    fun openGamesActivity(){
+        val intent = Intent(this@anxiety,games::class.java)
         finish()
         startActivity(intent)
     }
+    fun openFoodActivity(){
+        val intent = Intent(this@anxiety,food::class.java)
+        finish()
+        startActivity(intent)
+    }
+    fun openBreathingActivity(){
+        val intent = Intent(this@anxiety,breathingExercises::class.java)
+        finish()
+        startActivity(intent)
+    }
+    fun openMusicActivity(){
+        val intent = Intent(this@anxiety,music::class.java)
+        finish()
+        startActivity(intent)
+    }
+    override fun onBackPressed() {
+        finish()
+        val intent = Intent(this@anxiety, MainActivity::class.java)
+        startActivity(intent)
+    }
 }
+
