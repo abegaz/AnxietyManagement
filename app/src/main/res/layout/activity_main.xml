@@ -5,7 +5,7 @@
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              android:minHeight="300dp" android:minWidth="400dp"
-                                             android:background="#999999"
+                                             android:background="#465d76"
 >
 
     <LinearLayout
@@ -26,13 +26,13 @@
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
                     android:id="@+id/textView" android:clickable="false"
-                    android:typeface="normal"
+                    android:typeface="monospace"
                     android:fontFamily="sans-serif-medium"
 
 
                     android:textSize="42sp"
-                    app:fontFamily="sans-serif"
-            />
+                    app:fontFamily="monospace"
+                    android:textAllCaps="false" android:textStyle="bold" android:textColor="#9cc7f8"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="horizontal"
