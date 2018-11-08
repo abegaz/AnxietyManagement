@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#465d76"
+             tools:context=".view.games">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".view.MainActivity">
+
+        <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="150dp">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="Games"
+                        android:textSize="42sp"
+
+
+                        android:typeface="normal"
+                        app:fontFamily="sans-serif" android:textColor="#9cc7f8"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp" android:layout_weight="1">
+
+                <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="Play this game:"
+                        android:textSize="25sp"
+
+
+                        android:typeface="normal"
+                        app:fontFamily="sans-serif" android:textColor="@color/black_overlay"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                <TextView
+                        android:id="@+id/games_showgame_text"
+                        android:layout_width="223dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="Click Next Game"
+                        tools:textSize="30sp" android:gravity="center_horizontal" android:textColor="#9cc7f8"/>
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/nextGame_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:text="Next Game"/>
+
+            <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="bottom|left"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

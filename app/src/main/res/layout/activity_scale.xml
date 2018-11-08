@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#465d76"
+                tools:context=".view.scale">
+
+    <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        <RadioButton
+                android:id="@+id/radio_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 HIGH"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 9"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 8"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 7"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 6"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 5"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 3"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2"
+                android:onClick="checkButton"/>
+
+        <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 1 LOW"
+                android:onClick="checkButton"
+                android:checked="true"/>
+    </RadioGroup>
+
+
+    <TextView
+            android:id="@+id/text_view_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="What is your current anxiety level?"
+            android:textSize="25sp" android:textColor="#9cc7f8"/>
+
+    <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text=""
+            android:textSize="20sp"/>
+
+    <Button
+            android:id="@+id/button_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_marginTop="480dp"
+            android:text="Select"/>
+
+
+</RelativeLayout>

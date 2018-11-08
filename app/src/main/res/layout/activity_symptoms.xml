@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="#465d76"
+                                             tools:context="view.symptoms" android:id="@+id/relativeLayout">
+
+
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical" android:id="@+id/linearLayout4"
+            android:layout_width="match_parent" android:gravity="center_vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/text_view_selected"
+                    app:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Which best describes your current anxiety symptoms?"
+                    android:textSize="25sp"
+                    android:layout_gravity="center" android:layout_weight="1" android:textColor="#9cc7f8"/>
+        </LinearLayout>
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical" android:gravity="top|bottom|center_horizontal">
+
+            <CheckBox
+                    android:id="@+id/radio_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nervousness" android:textSize="15dp"/>
+            <CheckBox
+                    android:id="@+id/radio_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trouble Sleeping"
+                    android:textSize="15dp"/>
+            <CheckBox
+                    android:id="@+id/radio_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gastrointestinal Issues"
+                    android:textSize="15dp"/>
+            <CheckBox
+                    android:id="@+id/radio_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Worry"
+                    android:textSize="15dp"/>
+            <CheckBox
+                    android:id="@+id/radio_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Panic Feeling"
+                    android:textSize="15dp"/>
+            <CheckBox
+                    android:id="@+id/radio_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trembling"
+                    android:textSize="15dp"/>
+            <CheckBox
+                    android:id="@+id/radio_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rapid Breathing"
+                    android:textSize="15dp"/>
+            <CheckBox
+                    android:id="@+id/radio_nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increased Heart Rate"
+                    android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_horizontal">
+
+            <Button
+                    android:id="@+id/button_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

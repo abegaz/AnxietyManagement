@@ -5,6 +5,7 @@
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              android:minHeight="300dp" android:minWidth="400dp"
+                                             android:background="#465d76"
 >
 
     <LinearLayout
@@ -25,25 +26,25 @@
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
                     android:id="@+id/textView" android:clickable="false"
-                    android:typeface="normal"
+                    android:typeface="monospace"
                     android:fontFamily="sans-serif-medium"
 
 
                     android:textSize="42sp"
-                    app:fontFamily="sans-serif"
-            />
+                    app:fontFamily="monospace"
+                    android:textAllCaps="false" android:textStyle="bold" android:textColor="#9cc7f8"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:padding="10dp">
+                android:padding="5dp">
 
             <ImageButton
-                    android:layout_width="130dp"
-                    android:src="@drawable/meetup"
-                    android:id="@+id/user_meetup"
+                    android:layout_width="260dp"
+                    android:src="@drawable/alert_button"
+                    android:id="@+id/user_help"
                     tools:layout_editor_absoluteY="194dp"
                     tools:layout_editor_absoluteX="8dp"
                     android:scaleType="fitCenter"
@@ -52,10 +53,18 @@
                     android:layout_marginLeft="0dp" android:layout_marginRight="0dp"
                     android:layout_margin="0dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp"
                     android:padding="15dp" android:paddingBottom="0dp" android:paddingLeft="0dp"
-                    android:paddingRight="0dp" android:paddingTop="0dp" android:layout_height="130dp"/>
+                    android:paddingRight="0dp" android:paddingTop="0dp" android:layout_height="130dp"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="5dp">
             <ImageButton
                     android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_height="175dp"
                     android:src="@drawable/chat"
                     android:id="@+id/user_chat"
                     tools:layout_editor_absoluteY="194dp"
@@ -68,32 +77,29 @@
                     android:layout_margin="0dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp"
                     android:padding="15dp" android:paddingBottom="0dp" android:paddingLeft="0dp"
                     android:paddingRight="0dp" android:paddingTop="0dp"/>
+            <ImageButton
+                    android:layout_width="130dp"
+                    android:src="@drawable/meetup"
+                    android:id="@+id/user_meetup"
+                    tools:layout_editor_absoluteY="194dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible"
+                    android:background="@null"
+                    android:layout_marginLeft="0dp" android:layout_marginRight="0dp"
+                    android:layout_margin="0dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp"
+                    android:padding="15dp" android:paddingBottom="0dp" android:paddingLeft="0dp"
+                    android:paddingRight="0dp" android:paddingTop="0dp" android:layout_height="175dp"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:padding="10dp">
+                android:padding="5dp">
             <ImageButton
                     android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:src="@drawable/games"
-                    android:id="@+id/user_games"
-                    tools:layout_editor_absoluteY="194dp"
-                    tools:layout_editor_absoluteX="8dp"
-                    android:scaleType="fitCenter"
-                    android:visibility="visible"
-                    android:layout_weight="0"
-                    android:background="@null"
-                    android:layout_marginRight="0dp"
-                    android:layout_marginLeft="0dp" android:layout_margin="0dp" android:layout_marginTop="0dp"
-                    android:layout_marginBottom="0dp" android:padding="15dp" android:paddingBottom="0dp"
-                    android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingTop="0dp"
-            />
-            <ImageButton
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_height="175dp"
                     android:src="@drawable/ants"
                     android:id="@+id/user_anxiety"
                     tools:layout_editor_absoluteY="194dp"
@@ -106,16 +112,9 @@
                     android:layout_marginBottom="0dp" android:padding="15dp" android:paddingBottom="0dp"
                     android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingTop="0dp"
                     android:background="@null"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:padding="10dp">
             <ImageButton
                     android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_height="175dp"
                     android:src="@drawable/settings_button"
                     android:id="@+id/user_setting"
                     tools:layout_editor_absoluteY="194dp"
@@ -128,22 +127,6 @@
                     android:layout_marginRight="0dp" android:layout_margin="0dp" android:layout_marginTop="0dp"
                     android:layout_marginBottom="0dp" android:padding="15dp" android:paddingBottom="0dp"
                     android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingTop="0dp"/>
-            <ImageButton
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:src="@drawable/coffee"
-                    android:id="@+id/user_food"
-                    tools:layout_editor_absoluteY="194dp"
-                    tools:layout_editor_absoluteX="8dp"
-                    android:scaleType="fitCenter"
-                    android:visibility="visible"
-                    android:layout_weight="0"
-                    android:background="@null"
-                    android:layout_marginRight="0dp"
-                    android:layout_marginLeft="0dp" android:layout_margin="0dp" android:layout_marginTop="0dp"
-                    android:layout_marginBottom="0dp" android:padding="15dp" android:paddingBottom="0dp"
-                    android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingTop="0dp"
-            />
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
