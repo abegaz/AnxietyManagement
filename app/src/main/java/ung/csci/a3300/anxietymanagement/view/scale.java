@@ -3,14 +3,10 @@ package ung.csci.a3300.anxietymanagement.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import ung.csci.a3300.anxietymanagement.R;
+
 import java.util.Random;
 
 public class scale extends AppCompatActivity {
@@ -27,9 +23,9 @@ public class scale extends AppCompatActivity {
 
         textView = findViewById(R.id.text_view);
         Intent intent = getIntent();
-        String anxietyLevel = intent.getStringExtra("Patient_Disease");
-        Log.d("found again", anxietyLevel);
-        textView.setText(anxietyLevel);
+//        String anxietyLevel = intent.getStringExtra("Patient_Disease");
+//        Log.d("found again", anxietyLevel);
+//        textView.setText(anxietyLevel);
 
         Button buttonApply = findViewById(R.id.button_select);
         buttonApply.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +33,7 @@ public class scale extends AppCompatActivity {
             public void onClick(View view) {
                 finish();
                 Random rand = new Random();
-                int n = rand.nextInt(6)+1;
+                int n = rand.nextInt(3)+1;
                 switch (n){
                     case 1:
                         Intent intent = new Intent(getBaseContext(), breathingExercises.class);

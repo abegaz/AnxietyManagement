@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-              android:background="#999999"
-    tools:context=".view.breathingExercises">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#465d76"
+              tools:context=".view.breathingExercises" android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/text_view_selected"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="@android:dimen/app_icon_size">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Breathing Tips"
+                android:textSize="42sp"
+
+
+                android:typeface="monospace"
+                app:fontFamily="monospace" android:textColor="#9cc7f8"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/text_view_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp">
 
         <TextView
                 android:id="@+id/view1"
