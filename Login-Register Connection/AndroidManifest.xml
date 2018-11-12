@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ung.csci.a3300.anxietymanagement">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".view.login"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".view.register"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.symptoms"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.games"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+                <meta-data android:name="android.support.PARENT_ACTIVITY"
+                           android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.food"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.meetup"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.chat"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.settings"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.anxiety"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.MainActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.breathingExercises"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.scale"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+        <activity
+                android:name=".view.music"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_games"
+                android:theme="@style/FullscreenTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".view.symptoms"/>
+        </activity>
+    </application>
+
+</manifest>

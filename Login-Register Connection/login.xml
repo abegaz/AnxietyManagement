@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="#999999"
+                                             android:minHeight="300dp" android:minWidth="400dp"
+>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="Anxiety Assistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/textView3" android:clickable="false"
+                    android:typeface="normal"
+                    android:fontFamily="sans-serif-medium"
+
+
+                    android:textSize="42sp"
+                    app:fontFamily="sans-serif"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="237dp"
+                android:layout_height="173dp"
+                android:layout_gravity="center"
+                android:padding="10dp">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="20dp">
+
+                <TextView
+                        android:text="Please login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:id="@+id/textView2" android:clickable="false"
+                        android:typeface="normal"
+                        android:fontFamily="sans-serif-medium"
+
+                        android:textSize="20sp"
+                        app:fontFamily="sans-serif"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText3"
+                    android:text="Enter Email"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText4"
+                    android:text="Enter Password"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp">
+        <Button
+                android:text="Log In"
+                android:layout_width="wrap_content"
+                android:onClick="changeView_home"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="389dp"
+                tools:layout_editor_absoluteX="148dp" android:id="@+id/login_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp">
+        <Button
+                android:text="Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="389dp"
+                    tools:layout_editor_absoluteX="148dp" android:id="@+id/register_button"
+                android:onClick="changeView_register"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp">
+            <CheckBox
+                    android:text="Remember Me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="457dp"
+                    tools:layout_editor_absoluteX="131dp" android:id="@+id/checkBox"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
