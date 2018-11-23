@@ -5,78 +5,55 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#999999"
+        android:background="#465d76"
         android:minHeight="300dp" android:minWidth="400dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
             <TextView
-                android:id="@+id/textView"
-                app:fontFamily="sans-serif"
-                android:layout_width="match_parent"
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Food"
+                    android:textSize="42sp"
+
+
+                    android:typeface="normal"
+                    app:fontFamily="sans-serif" android:textColor="#9cc7f8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_weight="1"
-                android:clickable="false"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Anxiety Ants"
-
-
-                android:textSize="42sp"
-                android:typeface="normal" />
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_weight="1"
-                android:clickable="false"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Food"
-                android:textSize="42sp"
-
-
-                android:typeface="normal"
-                app:fontFamily="sans-serif" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="bottom|left"
-            android:orientation="horizontal"
-            android:padding="10dp">
+                android:layout_gravity="center"
+                android:gravity="bottom|left"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
         </LinearLayout>
     </LinearLayout>
