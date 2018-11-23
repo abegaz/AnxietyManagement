@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_games.*
  */
 class games : AppCompatActivity() {
 
-    var games = arrayOf("Runescape","World of Warcraft", "Counter Strike: Global Offensive")
+    var games = arrayOf("Proteus","Abzu","Journey","Farming Simulator", "Meadow")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
