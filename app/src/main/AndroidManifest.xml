@@ -23,7 +23,7 @@
         <activity
                 android:name=".view.games"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
                 <meta-data android:name="android.support.PARENT_ACTIVITY"
                            android:value=".view.symptoms"/>
@@ -31,7 +31,7 @@
         <activity
                 android:name=".view.food"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>
@@ -39,7 +39,7 @@
         <activity
                 android:name=".view.meetup"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>
@@ -47,15 +47,15 @@
         <activity
                 android:name=".view.chat"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".view.symptoms"/>
+                       android:value=".view.chat"/>
         </activity>
         <activity
                 android:name=".view.settings"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>
@@ -63,7 +63,7 @@
         <activity
                 android:name=".view.anxiety"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>
@@ -71,7 +71,7 @@
         <activity
                 android:name=".view.MainActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>
@@ -79,7 +79,7 @@
         <activity
                 android:name=".view.breathingExercises"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>
@@ -87,7 +87,7 @@
         <activity
                 android:name=".view.scale"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>
@@ -95,7 +95,7 @@
         <activity
                 android:name=".view.music"
                 android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_games"
+
                 android:theme="@style/FullscreenTheme">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                        android:value=".view.symptoms"/>

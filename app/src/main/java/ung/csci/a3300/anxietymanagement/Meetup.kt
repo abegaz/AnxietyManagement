@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import ung.csci.a3300.anxietymanagement.controller.User_buttons
+//import ung.csci.a3300.anxietymanagement.controller.User_buttons
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import android.os.Looper
@@ -88,4 +88,5 @@ class Meetup {
 
         val spinner: Spinner = findViewById(R.id.spinner)
         spinner.onItemSelectedListener = this
+    }
 }
