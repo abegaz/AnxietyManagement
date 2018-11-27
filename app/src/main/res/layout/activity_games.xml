@@ -99,13 +99,17 @@
                     android:text="Next Game"/>
 
             <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="260dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="bottom|left"
                     android:orientation="horizontal"
                     android:padding="10dp">
 
+                <TextView
+                        android:text="*These games were selected based on their calming nature."
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
 
