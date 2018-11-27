@@ -10,12 +10,15 @@
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:orientation="vertical" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    >
 
         <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
                 android:padding="10dp">
@@ -39,22 +42,58 @@
         </LinearLayout>
 
         <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:orientation="horizontal"
-                android:padding="10dp">
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginBottom="50dp">
         </LinearLayout>
-
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:gravity="bottom|left"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="10dp" android:layout_weight="1">
 
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" tools:layout_editor_absoluteY="190dp"
+                        tools:layout_editor_absoluteX="8dp">
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" tools:layout_editor_absoluteY="143dp"
+                            tools:layout_editor_absoluteX="83dp" android:id="@+id/textView5"
+                            tools:text="Select your Interests"
+                            android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="24sp"
+                            android:layout_weight="1"/>
+                    <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" tools:layout_editor_absoluteY="208dp"
+                            tools:layout_editor_absoluteX="8dp" android:id="@+id/spinInterest1"
+                            android:entries="@array/interests_array" android:layout_weight="1"/>
+                    <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" tools:layout_editor_absoluteY="254dp"
+                            tools:layout_editor_absoluteX="8dp" android:id="@+id/spinInterest2"
+                            android:entries="@array/interests_array" android:layout_weight="1"/>
+                    <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" tools:layout_editor_absoluteY="297dp"
+                            tools:layout_editor_absoluteX="8dp" android:id="@+id/spinInterest3"
+                            android:entries="@array/interests_array" android:layout_weight="1"/>
+                    <Button
+                            android:text="Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" tools:layout_editor_absoluteY="528dp"
+                            tools:layout_editor_absoluteX="148dp" android:id="@+id/buttonSaveInterests"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Anxiety Management</string>
     <string-array name="interests_array">
+        <item>-Select an interest-</item>
         <item>Video Games</item>
         <item>Movies</item>
         <item>TV Shows</item>
