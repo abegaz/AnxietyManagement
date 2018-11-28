@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Anxiety Management</string>
+
+    <string name="title_activity_games">games</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_test">test</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="send">Send</string>
+    <string name="this_is_my_message_that_will_wrap_into_multiple_lines_and_keep_on_going">This is my message that will
+        wrap into multiple lines and keep on going
+    </string>
+</resources>

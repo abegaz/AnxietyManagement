@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputEditText
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:hint="0-10" android:inputType="number" android:id="@+id/textInputEditText5"
+            tools:layout_editor_absoluteY="294dp" tools:layout_editor_absoluteX="140dp" android:textSize="14sp"/>
+    <android.support.design.widget.TextInputEditText
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:hint="0-10" android:inputType="number" android:id="@+id/textInputEditText4"
+            tools:layout_editor_absoluteY="493dp" tools:layout_editor_absoluteX="140dp" android:textSize="14sp"/>
+    <EditText
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            tools:layout_editor_absoluteY="442dp" tools:layout_editor_absoluteX="34dp" android:id="@+id/editText14"
+            android:text="Restlessness and/or feeling on edge?" android:textSize="14sp"/>
+    <android.support.design.widget.TextInputEditText
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:hint="0-10" android:inputType="number" android:id="@+id/textInputEditText3"
+            tools:layout_editor_absoluteY="390dp" tools:layout_editor_absoluteX="141dp" android:textSize="14sp"/>
+    <EditText
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            tools:layout_editor_absoluteY="342dp" tools:layout_editor_absoluteX="23dp" android:id="@+id/editText13"
+            android:text="How often is snappy or irritable a typical mood?" android:singleLine="false"
+            android:textSize="14sp"/>
+    <android.support.design.widget.TextInputEditText
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:hint="0-10" android:inputType="number" android:id="@+id/textInputEditText2"
+            tools:layout_editor_absoluteY="196dp" tools:layout_editor_absoluteX="141dp" android:textSize="14sp"/>
+    <EditText
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            tools:layout_editor_absoluteY="247dp" tools:layout_editor_absoluteX="22dp" android:id="@+id/editText12"
+            android:text="Do you feel ‘butterflies’ in your stomach?" android:textSize="14sp"/>
+    <EditText
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            tools:layout_editor_absoluteY="145dp" tools:layout_editor_absoluteX="17dp" android:id="@+id/editText11"
+            android:text="How much do you worry over small things?" android:textSize="14sp"/>
+    <EditText
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            tools:layout_editor_absoluteY="69dp" tools:layout_editor_absoluteX="29dp" android:id="@+id/editText8"
+            android:text="Answer all questions on a 1-10 basis of severity . Answer 0 for does not apply."/>
+    <EditText
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Anxiety History"
+            android:ems="10"
+            tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="106dp" android:id="@+id/editText9"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" android:textSize="24sp"/>
+</android.support.constraint.ConstraintLayout>
